@@ -6,6 +6,7 @@ import Root from './components/Root/Root';
 import ErrorPage from './components/ErrorPage/ErrorPage';
 import Home from './components/HomePage/Home';
 import Dashboard from './components/Dashboard/Dashboard';
+import LoginPage from './components/LoginPage/LoginPage';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -22,6 +23,10 @@ const router = createBrowserRouter([
       }
     ]
   },
+  {
+    path: '/login',
+    element: <LoginPage></LoginPage>
+  }
 ]);
 createRoot(document.getElementById('root')).render(
   <StrictMode>
