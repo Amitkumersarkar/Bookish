@@ -7,6 +7,7 @@ import ErrorPage from './components/ErrorPage/ErrorPage';
 import Home from './components/HomePage/Home';
 import Dashboard from './components/Dashboard/Dashboard';
 import LoginPage from './components/LoginPage/LoginPage';
+import BookDetails from './components/BookDetails/BookDetails';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -16,6 +17,11 @@ const router = createBrowserRouter([
       {
         path: '/',
         element: <Home></Home>,
+      },
+      {
+        // dynamic path
+        path: 'books/:bookId',
+        element: <BookDetails></BookDetails>
       },
       {
         path: '/dashboard',
