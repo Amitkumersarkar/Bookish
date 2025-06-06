@@ -3,26 +3,48 @@ import { NavLink } from 'react-router-dom';
 
 const LoginPage = () => {
     return (
-        <div className="hero bg-base-200 min-h-screen">
-            <div className="hero-content flex-col lg:flex-row-reverse">
-                <div className="text-center lg:text-left">
+        <div className="hero min-h-screen bg-base-200">
+            <div className="hero-content flex-col text-center">
+                {/* Header Section */}
+                <div className="mb-8">
                     <h1 className="text-5xl font-bold">Login now!</h1>
-                    <p className="py-6">
-                        Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
-                        quasi. In deleniti eaque aut repudiandae et a id nisi.
+                    <p className="py-6 max-w-md mx-auto">
+                        Access your personalized book dashboard and continue exploring your reading journey. Don't have an account? Sign up to get started!
                     </p>
-                    <button className='btn btn-ghost bg-cyan-700'><NavLink to='/'>Home</NavLink></button>
+                    <NavLink to='/' className="btn btn-ghost bg-cyan-700 text-white mt-4">Home</NavLink>
                 </div>
-                <div className="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+
+                {/* Login Form */}
+                <div className="card w-full max-w-lg bg-base-100 shadow-2xl p-6">
                     <div className="card-body">
-                        <fieldset className="fieldset">
-                            <label className="label">Email</label>
-                            <input type="email" className="input" placeholder="Email" />
-                            <label className="label">Password</label>
-                            <input type="password" className="input" placeholder="Password" />
-                            <div><a className="link link-hover">Forgot password?</a></div>
-                            <button className="btn btn-neutral mt-4">Login</button>
-                        </fieldset>
+                        <div className="form-control">
+                            <label htmlFor="email" className="label">
+                                <span className="label-text">Email</span>
+                            </label>
+                            <input
+                                id="email"
+                                type="email"
+                                placeholder="Email"
+                                className="input input-bordered"
+                            />
+                        </div>
+                        <div className="form-control">
+                            <label htmlFor="password" className="label">
+                                <span className="label-text">Password</span>
+                            </label>
+                            <input
+                                id="password"
+                                type="password"
+                                placeholder="Password"
+                                className="input input-bordered"
+                            />
+                            <label className="label">
+                                <a href="#" className="label-text-alt link link-hover">Forgot password?</a>
+                            </label>
+                        </div>
+                        <div className="form-control mt-6">
+                            <button className="btn btn-neutral">Login</button>
+                        </div>
                     </div>
                 </div>
             </div>

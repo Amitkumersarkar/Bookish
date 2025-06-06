@@ -1,8 +1,9 @@
-import { useParams } from "react-router-dom";
+import { useLoaderData, useParams } from "react-router-dom";
 
 const BookDetails = () => {
     const { bookId } = useParams();
-    console.log(bookId);
+    const data = useLoaderData();
+    console.log( data);
     return (
         <div>
             <h2>book details : {bookId}</h2>
