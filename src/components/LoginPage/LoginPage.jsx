@@ -11,7 +11,7 @@ const LoginPage = () => {
                     <p className="py-6 max-w-md mx-auto">
                         Access your personalized book dashboard and continue exploring your reading journey. Don't have an account? Sign up to get started!
                     </p>
-                    <NavLink to='/' className="btn btn-ghost bg-cyan-700 text-white mt-4">Home</NavLink>
+                    {/* <NavLink to='/' className="btn btn-ghost bg-cyan-700 text-white mt-4">Home</NavLink> */}
                 </div>
 
                 {/* Login Form */}
