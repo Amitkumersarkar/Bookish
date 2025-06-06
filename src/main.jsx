@@ -8,6 +8,8 @@ import Home from './components/HomePage/Home';
 import Dashboard from './components/Dashboard/Dashboard';
 import LoginPage from './components/LoginPage/LoginPage';
 import BookDetails from './components/BookDetails/BookDetails';
+import Contact from './components/ContactPage/Contact';
+import Service from './components/ServicePage/Service';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -27,13 +29,21 @@ const router = createBrowserRouter([
       {
         path: '/dashboard',
         element: <Dashboard></Dashboard>
-      }
+      },
+      {
+        path: '/contact',
+        element: <Contact></Contact>
+      },
+      {
+        path: '/service',
+        element: <Service></Service>
+      },
+      {
+        path: '/login',
+        element: <LoginPage></LoginPage>
+      },
     ]
   },
-  {
-    path: '/login',
-    element: <LoginPage></LoginPage>
-  }
 ]);
 createRoot(document.getElementById('root')).render(
   <StrictMode>

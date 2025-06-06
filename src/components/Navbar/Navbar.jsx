@@ -30,8 +30,8 @@ const Navbar = () => {
                         <details>
                             <summary>About</summary>
                             <ul className="p-2">
-                                <li><a>Contact</a></li>
-                                <li><a>Service</a></li>
+                                <li><NavLink to='/contact'>Contact</NavLink></li>
+                                <li><NavLink to='/service'>Service</NavLink></li>
                             </ul>
                         </details>
                     </li>
