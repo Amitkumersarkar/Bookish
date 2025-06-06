@@ -17,7 +17,7 @@ const Navbar = () => {
         isActive ? "text-primary font-semibold" : "";
 
     return (
-        <div className="navbar bg-base-100 shadow-sm">
+        <div className="navbar bg-base-100 shadow-sm mb-10 p-5 rounded-xl">
             {/* Navbar Start (Mobile Menu) */}
             <div className="navbar-start">
                 <div className="dropdown">

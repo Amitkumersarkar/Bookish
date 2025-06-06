@@ -29,7 +29,7 @@ const BookDetails = () => {
                 <img
                     src={image}
                     alt={bookName}
-                    className="w-full max-w-sm h-96 object-contain rounded-lg shadow-md bg-base-200 p-4 mx-auto md:mx-0"
+                    className="w-full max-w-sm h-96 object-contain rounded-lg shadow-md bg-base-400 p-4 mx-auto md:mx-0"
                 />
 
                 {/* Book Info */}
