@@ -10,6 +10,7 @@ import LoginPage from './components/LoginPage/LoginPage';
 import BookDetails from './components/BookDetails/BookDetails';
 import Contact from './components/ContactPage/Contact';
 import Service from './components/ServicePage/Service';
+import ViewTheList from './components/ViewTheList/ViewTheList';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -42,6 +43,11 @@ const router = createBrowserRouter([
         path: '/login',
         element: <LoginPage></LoginPage>
       },
+      {
+        path: '/viewthelist',
+        loader: () => fetch('/booksData.json'),
+        element: <ViewTheList></ViewTheList>
+      }
     ]
   },
 ]);

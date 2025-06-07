@@ -1,3 +1,4 @@
+import { NavLink } from 'react-router-dom';
 import HeroImg from '../../assets/books.jpg';
 
 const Hero = () => {
@@ -12,9 +13,11 @@ const Hero = () => {
                     <p className="py-4 text-lg text-gray-700">
                         Discover new titles and freshen up your bookshelf with hand-picked recommendations just for you.
                     </p>
-                    <button className="btn btn-primary btn-lg mt-4">
-                        View The List
-                    </button>
+                    <NavLink to='/viewthelist'>
+                        <button className="btn btn-primary btn-lg mt-4">
+                            View The List
+                        </button>
+                    </NavLink>
                 </div>
 
                 {/* Image Section */}
