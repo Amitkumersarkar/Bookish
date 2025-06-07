@@ -43,7 +43,7 @@ const LoginPage = () => {
                             </label>
                         </div>
                         <div className="form-control mt-6">
-                            <button className="btn btn-neutral">Login</button>
+                            <button className="btn btn-ghost bg-blue-500">Login</button>
                         </div>
                     </div>
                 </div>

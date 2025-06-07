@@ -88,7 +88,7 @@ const Navbar = () => {
 
             {/* Navbar End */}
             <div className="navbar-end">
-                <NavLink to="/login" className="btn">Log In</NavLink>
+                <NavLink to="/login" className="btn btn-ghost bg-cyan-600">Log In</NavLink>
             </div>
         </div>
     );
