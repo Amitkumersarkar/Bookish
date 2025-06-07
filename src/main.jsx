@@ -1,7 +1,8 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import './index.css'
-import { createBrowserRouter, RouterProvider, } from "react-router-dom";
+import { StrictMode } from 'react';
+import { createRoot } from 'react-dom/client';
+import './index.css';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+
 import Root from './components/Root/Root';
 import ErrorPage from './components/ErrorPage/ErrorPage';
 import Home from './components/HomePage/Home';
@@ -11,48 +12,55 @@ import BookDetails from './components/BookDetails/BookDetails';
 import Contact from './components/ContactPage/Contact';
 import Service from './components/ServicePage/Service';
 import ViewTheList from './components/ViewTheList/ViewTheList';
+
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 const router = createBrowserRouter([
   {
-    path: "/",
-    element: <Root></Root>,
-    errorElement: <ErrorPage></ErrorPage>,
+    path: '/',
+    element: <Root />,
+    errorElement: <ErrorPage />,
     children: [
       {
         path: '/',
-        element: <Home></Home>,
+        element: <Home />,
       },
       {
-        // dynamic path
         path: 'books/:bookId',
-        element: <BookDetails></BookDetails>,
+        element: <BookDetails />,
         loader: () => fetch('/booksData.json'),
       },
       {
-        path: '/dashboard',
-        element: <Dashboard></Dashboard>
+        path: 'dashboard',
+        element: <Dashboard />,
       },
       {
-        path: '/contact',
-        element: <Contact></Contact>
+        path: 'contact',
+        element: <Contact />,
       },
       {
-        path: '/service',
-        element: <Service></Service>
+        path: 'service',
+        element: <Service />,
       },
       {
-        path: '/login',
-        element: <LoginPage></LoginPage>
+        path: 'login',
+        element: <LoginPage />,
       },
       {
-        path: '/viewthelist',
+        path: 'viewthelist',
+        element: <ViewTheList />,
         loader: () => fetch('/booksData.json'),
-        element: <ViewTheList></ViewTheList>
-      }
-    ]
+      },
+    ],
   },
 ]);
+
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <RouterProvider router={router} />
-  </StrictMode>,
-)
+    <>
+      <RouterProvider router={router} />
+      <ToastContainer />
+    </>
+  </StrictMode>
+);
