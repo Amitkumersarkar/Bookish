@@ -36,5 +36,5 @@ React Router	Routing & page navigation
 React Icons	Icon library (FontAwesome used)
 
 🔗 Live Demo
-👉 Hosted on Vercel
+👉 Hosted on Netlify
 🌍 Live URL: https://bookishman.netlify.app/service
