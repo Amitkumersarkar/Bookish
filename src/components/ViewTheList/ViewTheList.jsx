@@ -25,7 +25,7 @@ const ViewTheList = () => {
         <div className='p-4'>
             <h3 className='text-2xl my-9'>Total Listed Books: {readList.length + wishList.length}</h3>
             <Tabs>
-                <TabList>
+                <TabList className='mb-5'>
                     <Tab>Read List</Tab>
                     <Tab>Wish List</Tab>
                 </TabList>
