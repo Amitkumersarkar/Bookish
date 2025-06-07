@@ -37,4 +37,4 @@ React Icons	Icon library (FontAwesome used)
 
 🔗 Live Demo
 👉 Hosted on Netlify
-🌍 Live URL: https://bookishman.netlify.app/service
+🌍 Live URL: https://bookishman.netlify.app
